@@ -16,8 +16,11 @@ for (let i = 0; i < allArticleHeaders.length; i++) {
 }
 
 /* [x] Obtain a reference the element with a class of dashed and remove it. */
-let dashed = document.querySelector(".dashed");
-dashed.classList.remove("dashed");
+let dashed = document.querySelectorAll(".dashed");
+for (let i = 0; i < allArticleHeaders.length; i++) {
+    dashed[i].classList.remove("dashed");
+}
+
 
 
 /* [x] Obtain a reference the element with a class of article_footer 
