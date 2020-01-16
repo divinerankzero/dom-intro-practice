@@ -11,7 +11,9 @@ articleHeader.textContent = "Welcome to the DOM Blog";
 and change their classList property value to article__header important. */
 
 let allArticleHeaders = document.querySelectorAll(".article__header");
-articleHeader.classList.add("important");
+for (let i = 0; i < allArticleHeaders.length; i++) {
+    allArticleHeaders[i].classList.add("important");
+}
 
 /* [x] Obtain a reference the element with a class of dashed and remove it. */
 let dashed = document.querySelector(".dashed");
